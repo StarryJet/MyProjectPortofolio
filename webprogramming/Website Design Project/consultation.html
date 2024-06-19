@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTM E-Clinic System - Consultation</title>
+    <link rel="stylesheet" href="consultationstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="UTM Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="consultation.html">Consultation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html">Welcome User!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>UTM E-Clinic System</h1>
+                <h2>Consultation</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="consultation-container">
+                <h2>Current Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Queue Number</th>
+                            <th>Patient Name</th>
+                            <th>Appointment Date</th>
+                            <th>Appointment Time</th>
+                            <th>Doctor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q001</td>
+                            <td>Nicholas Russell</td>
+                            <td>2024-02-20</td>
+                            <td>10:00 AM</td>
+                            <td>Dr. Johnson</td>
+                        </tr>
+                        <tr>
+                            <td>Q002</td>
+                            <td>Nicholas Russell</td>
+                            <td>2024-02-20</td>
+                            <td>10:30 AM</td>
+                            <td>Dr. Smith</td>
+                        </tr>
+                        <!-- Add more rows for current appointments -->
+                    </tbody>
+                </table>
+
+                <h2>Past Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Appointment Date</th>
+                            <th>Appointment Time</th>
+                            <th>Doctor</th>
+                            <th>View Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nicholas Russell</td>
+                            <td>2024-02-15</td>
+                            <td>10:00 AM</td>
+                            <td>Dr. Johnson</td>
+                            <td><button onclick="window.location.href='consultationreport2.html'">View Result</button></td>
+                        </tr>
+                        <tr>
+                            <td>Nicholas Russell</td>
+                            <td>2024-02-12</td>
+                            <td>10:30 AM</td>
+                            <td>Dr. Smith</td>
+                            <td><button onclick="window.location.href='consultationreport1.html'">View Result</button></td>
+                        </tr>
+                        <!-- Add more rows for past appointments -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UTM E-Clinic System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
