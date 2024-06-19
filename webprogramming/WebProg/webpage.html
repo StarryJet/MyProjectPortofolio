@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Assignment 2</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Define grid layout */
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "menu"
+                "top-image"
+                "welcome"
+                "content"
+                "bottommenu"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto auto;
+            min-height: 100vh;
+        }
+        
+        /* Header styles */
+        header {
+            grid-area: header;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        /* Menu styles */
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Top Image Style */
+        .top-image img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        /* Welcome */
+        .welcome {
+            padding-left: 20px;
+        }
+        .welcome h1 {
+            margin-bottom: 10px;
+        }
+        
+        .welcome p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Content styles */
+        .content {
+            grid-area: content;
+            padding: 20px;
+        }
+        
+        .content h2 {
+            margin-bottom: 10px;
+        }
+        
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .content img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            align-content: end;
+        }
+        
+        /* Bottom Menu styles */
+        .bottommenu {
+            grid-area: bottommenu;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .bottommenu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .bottommenu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .bottommenu ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .bottommenu ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        /* Footer styles */
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="image (1).png" alt="Logo">
+            <h1>Web Programming - Assignment 2</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="webpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li> <!-- Link to "about" page -->
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="top-image">
+        <img src="3480785.jpg" alt="Image">
+        </div>
+        <div class="welcome">
+            <h1>Welcome to Our Webpage Home</h1>
+            <p>Welcome to our webpage home! Here, you'll find the culmination of our efforts in Assignment 2 of SECV2223 - Web Programming. Dive into a digital realm where creativity meets functionality as we showcase our mastery of web programming principles. Explore our innovative solutions, crafted with precision and passion, to fulfill the requirements of this assignment. Join us on this journey through the world of web programming, where every line of code tells a story of dedication and learning.</p>
+        </div>
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to revolutionize the digital landscape through cutting-edge web programming solutions. Fueled by our passion for innovation and driven by a relentless pursuit of excellence, we strive to create user-centric experiences that seamlessly blend functionality with aesthetics. With every line of code we write, we aim to empower businesses, inspire creativity, and enrich the online experience for users worldwide. Together, we are committed to shaping the future of the web, one project at a time</p>
+            <img src="coverimage.jpg" alt="Image">
+        </div>
+        <nav class="bottommenu">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>&copy; 2024 Nasi Padang Enterprise. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Assignment 2</title>
+    <style>
+        /* Reset default margin and padding */
+        body,
+        h1,
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define grid layout */
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "menu"
+                "content"
+                "bottommenu"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto auto;
+            min-height: 100vh;
+        }
+
+        /* Header styles */
+        header {
+            grid-area: header;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Menu styles */
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Top Image Style */
+        .top-image img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Welcome */
+        .welcome {
+            padding-left: 20px;
+        }
+
+        .welcome h1 {
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Content styles */
+        .content {
+            grid-area: content;
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+
+        /* Portfolio section */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio p {
+            text-align: justify;
+            padding-bottom: 10px;
+        }
+
+        .portfolio-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .portfolio img {
+            max-width: 450px;
+            height: auto;
+            margin-bottom: 20px;
+            align-content: center;
+        }
+
+        /* Bottom Menu styles */
+        .bottommenu {
+            grid-area: bottommenu;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .bottommenu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .bottommenu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .bottommenu ul li:last-child {
+            margin-right: 0;
+        }
+
+        .bottommenu ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Footer styles */
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="image (1).png" alt="Logo">
+            <h1>Web Programming - Assignment 2</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="webpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li> <!-- Link to "about" page -->
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Meet Ghathfan Muhamad Afif'azfa and Kevin Fachrezy, dynamic duo of the digital realm
+                and passionate software engineering students currently honing their skills at UTM. With a fervent
+                dedication to mastering the intricacies of web programming, they embark on a journey to craft innovative
+                digital solutions and push the boundaries of technological possibility. Armed with a fusion of
+                creativity and technical prowess, they are poised to leave an indelible mark on the world of software
+                development.</p>
+            
+            <h2>Our Mission</h2>
+                <p>Our mission is to revolutionize the digital landscape through cutting-edge web programming solutions. Fueled
+                by our passion for innovation and driven by a relentless pursuit of excellence, we strive to create
+                user-centric experiences that seamlessly blend functionality with aesthetics. With every line of code we
+                write, we aim to empower businesses, inspire creativity, and enrich the online experience for users
+                worldwide. Together, we are committed to shaping the future of the web, one project at a time</p>
+        </div>
+        <!-- Add portfolio content here -->
+    <div id="portfolio" class="portfolio">
+        <div class="portfolio-item">
+            <h3>KEVIN FACHREZY</h3>
+            <img src="lontong.jpeg" alt="image">
+            <p>
+                Hi everyone, my name is Kevin Fachrezy, currently Year 2 majoring in Software Engineering at University Teknologi Malaysia.
+                I an international student from Indonesia.
+            </p>
+            <p>
+                My passion is currently in the process of software engineering. I like designing, and participating in software development activities.
+                In the past few semesters, I have taken the role of project manager many times and for each project I participated in, I learned something new.
+            </p>
+            <p>
+                During my time as project manager, I meet new people both international students and local students alike which added new insight about different people and how to properly handle them.
+                Communication and collaboration has always been the key for success in projects involving people from different background. As such, I sometimes switched position between being a project manager and developer.
+            </p>
+            <p>
+                The reason as to why I choose Software Engineering as my major is because during my childhood, computer was slowly spreading to the public in Indonesia at the time. People started to have PC in their homes.
+                As the years progressed, computers became more advanced and I was interested in what makes this box of electronics become part of people's life and as I learned deeper, the box is more than just a box, it can help make life easier.
+                I knew this when I first interacted with a social media website at the time, Facebook. I quickly learned how computers can unite people that are separated by vast distance and share their stories. From their my interest in the world of computing grew even more.
+            </p>
+            <p>
+                Right now, I have the chance to understand deeper about web and its components. This will be a new page in my life as I delve deeper into the world of web programming and later on I might even be able to develop my own website
+                and perhaps, in a way, discover new things that can improve the computing world.
+            </p>
+        </div>
+        <div class="portfolio-item">
+            <h3>GHATHFAN MUHAMAD AFIFAZFA</h3>
+            <img src="8ods2o.jpg" alt="Image">
+            <p>Hello everybody, My name is Ghathfan Muhamad Afifazfa, Year 3 Software Engineering student at University Teknologi Malaysia. 
+                I am studying abroad here, while I'm actually from Bogor, West Java, Indonesia.</p>
+            <p>Studying abroad is somekind of a challenge to me, since the feel is different from my hometown. Here, I need to understand the culture of people here to be able to communicate.
+               But, I were able to adapt easily since the culture aren't that different with my Country. Then, here I met a lot of amazing people. Each of them gives me inspirations and views of what should I do to become like them
+            </p>
+            <p> The reason I'm learning Software Engineering is that I were interested on technology since I was a child. As a child, I like to play a lot of games and sometimes wonder if I
+                could create my own games and become a developer. But as the times goes by, currently I am more interested in designing an application interface. It also influenced by my passion
+                on drawing and painting.</p>
+            <p> At this semester, I am really excited to learn web programming because for the past semester I have been designing a concept website interface for my other courses using Figma.
+                Now what's left is that I wanted to be able to implement my Imagination of designing website UI into a code.
+            </p>
+            <p> So that's all about me and happy learning! ^-^</p>
+        </div>
+    </div>
+    <div>
+        <nav class="bottommenu">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>&copy; 2024 Nasi Padang Enterprise. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
