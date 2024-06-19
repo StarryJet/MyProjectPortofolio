@@ -15,6 +15,7 @@ https://drive.google.com/drive/folders/1XMa_xcrXagbt3R88tDxu3jbzZTIS19ZO?usp=sha
 
 # Project Phase 2
 I created a flowchart
+
 ![image](https://github.com/StarryJet/MyProjectPortofolio/assets/147372205/f311e367-9521-4eb7-9e38-624ebcc3428d)
 
 # Project Phase 3
